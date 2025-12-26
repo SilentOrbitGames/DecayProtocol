@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8182523171495594948}
   - component: {fileID: 1304522925930873505}
   - component: {fileID: 3283242310470147794}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Botle_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289725549248141242}
   - component: {fileID: 2528384233853640694}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Botle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 7242575782417246967}
   - component: {fileID: 8311216035340361405}
   - component: {fileID: 2970208368668489121}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Botle_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,9 +289,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2670718174674497086}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BottlePickup
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,7 +306,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 900.59406, y: 0.0054663, z: 51.826694}
-  m_LocalScale: {x: 0.007, y: 0.007, z: 0.007}
+  m_LocalScale: {x: 0.0113932, y: 0.0113932, z: 0.0113932}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 289725549248141242}
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 7666796318328842964}
   - component: {fileID: 7529174000721722531}
   - component: {fileID: 2967745567895408898}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Botle_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

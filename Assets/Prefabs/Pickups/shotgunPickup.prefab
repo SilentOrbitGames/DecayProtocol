@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2714098303637572623}
   - component: {fileID: 2488720438445583250}
   - component: {fileID: 1495224734044432112}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 2251996788598579262}
   - component: {fileID: 4359674779186902426}
   - component: {fileID: 3873614787078938375}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: slug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 2053735746362957628}
   - component: {fileID: 200783530153513893}
   - component: {fileID: 145026406119974185}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: pump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,9 +336,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4312271181128129045}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: shotgunPickup
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 8396284094429995628}
   - component: {fileID: 4613915165287338506}
   - component: {fileID: 4609286804294205271}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 803175555214069782}
   - component: {fileID: 6044520343006489485}
   - component: {fileID: 3304640312860801860}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

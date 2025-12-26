@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7888275164177723255}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SprayPaintPickup
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 9215977551702485623}
   - component: {fileID: 6212208782453409827}
   - component: {fileID: 5993505572077611601}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Can
   m_TagString: Untagged
   m_Icon: {fileID: 0}

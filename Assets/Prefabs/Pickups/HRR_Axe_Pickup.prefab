@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8261058651308184671}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HRR_Axe_Pickup
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 9141381707807434027}
   - component: {fileID: 1628357276284094799}
   - component: {fileID: 648564195096974429}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Object1538
   m_TagString: Untagged
   m_Icon: {fileID: 0}

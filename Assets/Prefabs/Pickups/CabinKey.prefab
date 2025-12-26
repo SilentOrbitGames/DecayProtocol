@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5614348332365993785}
   - component: {fileID: 6501114576676574935}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CabinKey
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 799.6072, y: 70.286, z: 66.02315}
-  m_LocalScale: {x: 0.1, y: 0.10000003, z: 0.10000003}
+  m_LocalScale: {x: 0.22639, y: 0.22639008, z: 0.22639008}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5983529525916528062}
@@ -73,7 +73,8 @@ GameObject:
   - component: {fileID: 5983529525916528062}
   - component: {fileID: 9162602321771626199}
   - component: {fileID: 210019566389498704}
-  m_Layer: 0
+  - component: {fileID: 4491209670598259136}
+  m_Layer: 11
   m_Name: CabinKey_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,6 +149,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &4491209670598259136
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5115479694223191576}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5182218542053229621
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +182,8 @@ GameObject:
   - component: {fileID: 2129651364425470836}
   - component: {fileID: 6987728150270173884}
   - component: {fileID: 751863524980531182}
-  m_Layer: 0
+  - component: {fileID: 1136532225547921088}
+  m_Layer: 11
   m_Name: CabinKey_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,6 +258,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &1136532225547921088
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182218542053229621}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7909105441263135063
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +291,8 @@ GameObject:
   - component: {fileID: 5673864938524383501}
   - component: {fileID: 6897471476870407410}
   - component: {fileID: 3013170774499793052}
-  m_Layer: 0
+  - component: {fileID: 2665032765642932345}
+  m_Layer: 11
   m_Name: CabinKey_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,3 +367,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2665032765642932345
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909105441263135063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

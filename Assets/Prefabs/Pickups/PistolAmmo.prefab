@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1590331171767014475}
   - component: {fileID: 9017728474021191383}
   - component: {fileID: 9192814418775553719}
-  m_Layer: 0
+  - component: {fileID: 2900787997696488879}
+  m_Layer: 11
   m_Name: Bullets_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,6 +87,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2900787997696488879
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803268368732346949}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5405896377195198028
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +120,8 @@ GameObject:
   - component: {fileID: 7186906934145226249}
   - component: {fileID: 4338719158936720330}
   - component: {fileID: 7134388055809037972}
-  m_Layer: 0
+  - component: {fileID: 785322444301612522}
+  m_Layer: 11
   m_Name: Bullets_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,6 +196,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &785322444301612522
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5405896377195198028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7502327590694139556
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +229,8 @@ GameObject:
   - component: {fileID: 6656185048080736927}
   - component: {fileID: 179740988993850631}
   - component: {fileID: 601779011095786460}
-  m_Layer: 0
+  - component: {fileID: 3725696411398063457}
+  m_Layer: 11
   m_Name: Bullets_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,6 +305,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &3725696411398063457
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502327590694139556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6579597002715719306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -268,27 +337,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.09
+      value: 0.19193
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.09
+      value: 0.19193
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.09
+      value: 0.19193
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 799.1655
+      value: 801.07153
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 70.286835
+      value: 70.28706
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 68.42177
+      value: 66.04789
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -318,17 +387,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4495341902998619831, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: -1025663018108745142, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_Name
       value: Bullets
+      objectReference: {fileID: 0}
+    - target: {fileID: -1025663018108745142, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -222247988217360101, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_Name
       value: BulletBox
       objectReference: {fileID: 0}
+    - target: {fileID: -222247988217360101, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       propertyPath: m_Name
       value: PistolAmmo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+      propertyPath: m_TagString
+      value: ammo
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3861530873277837734, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
@@ -345,10 +434,70 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7186906934145226249}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -4495341902998619831, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1209193662585424753}
+    - targetCorrespondingSourceObject: {fileID: -222247988217360101, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1951947318786122676}
     - targetCorrespondingSourceObject: {fileID: -1025663018108745142, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4839401759210514410}
   m_SourcePrefab: {fileID: 100100000, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+--- !u!1 &1932671813914910659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4495341902998619831, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+  m_PrefabInstance: {fileID: 6579597002715719306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1209193662585424753
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932671813914910659}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2856696397604468625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -222247988217360101, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}
+  m_PrefabInstance: {fileID: 6579597002715719306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1951947318786122676
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2856696397604468625}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3065667625381522624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1025663018108745142, guid: d227f1fabca94eb4fa53bfbeaa004ad3, type: 3}

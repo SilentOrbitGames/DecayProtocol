@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3605288516559753565}
   - component: {fileID: 6751236924983491355}
   - component: {fileID: 4768385893039360149}
-  m_Layer: 0
+  - component: {fileID: 4592223499867382846}
+  m_Layer: 11
   m_Name: Cloths_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,6 +87,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &4592223499867382846
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964281288539202161}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5542706792777278296
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +120,8 @@ GameObject:
   - component: {fileID: 1451697801976223470}
   - component: {fileID: 3588186440657649996}
   - component: {fileID: 4063531155887047818}
-  m_Layer: 0
+  - component: {fileID: 3226524225585352962}
+  m_Layer: 11
   m_Name: Cloths_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,6 +196,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &3226524225585352962
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5542706792777278296}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9023624311448736753
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,9 +228,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8534754690910079307}
   - component: {fileID: 7748840944625728314}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cloths
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,9 +243,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9023624311448736753}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 900.7803, y: 0.02310184, z: 51.801155}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_LocalScale: {x: 0.253952, y: 0.253952, z: 0.253952}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3605288516559753565}
@@ -245,7 +291,8 @@ GameObject:
   - component: {fileID: 5513323497699895143}
   - component: {fileID: 4375264615035180127}
   - component: {fileID: 3441839455127771263}
-  m_Layer: 0
+  - component: {fileID: 6994630920204639659}
+  m_Layer: 11
   m_Name: Cloths_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,3 +367,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6994630920204639659
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9136919045686549335}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddf34d96cfc5ad146b2601d57bbef6f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

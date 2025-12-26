@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7866652984224292166}
   - component: {fileID: 2871176268382283412}
   - component: {fileID: 3366760079776925297}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 7907095486575559763}
   - component: {fileID: 1152194087494370908}
   - component: {fileID: 2155630965539695596}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: clip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 58561406402441327}
   - component: {fileID: 3502046572125745508}
   - component: {fileID: 5232697745496945612}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 8931068005615564357}
   - component: {fileID: 5096386909108349959}
   - component: {fileID: 3290694811621236117}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,9 +446,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852454834884376460}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: pistolPickup
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 8428242083942410092}
   - component: {fileID: 145936898154812837}
   - component: {fileID: 7946518846565727974}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

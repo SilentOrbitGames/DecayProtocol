@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3712260242041936124}
   - component: {fileID: 7366846601693130120}
   - component: {fileID: 810242622000522647}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BaseballBatPickup
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
