@@ -289,6 +289,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2670718174674497086}
+  - component: {fileID: 3252559548781609683}
+  - component: {fileID: 4444556695249086942}
   m_Layer: 11
   m_Name: BottlePickup
   m_TagString: weapon
@@ -312,6 +314,42 @@ Transform:
   - {fileID: 289725549248141242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3252559548781609683
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6893483283593358488}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 7.999998
+  m_Height: 54.939514
+  m_Direction: 1
+  m_Center: {x: -19.9, y: 23.230236, z: -69.4}
+--- !u!114 &4444556695249086942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6893483283593358488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94367bd11dc32b444b4d287d8fc1d47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseWeapon: 7
 --- !u!1 &9181814808454152931
 GameObject:
   m_ObjectHideFlags: 0

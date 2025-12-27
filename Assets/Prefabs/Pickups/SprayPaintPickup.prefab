@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7888275164177723255}
+  - component: {fileID: 7201319033609729546}
+  - component: {fileID: 7806043269621291019}
   m_Layer: 11
   m_Name: SprayPaintPickup
   m_TagString: weapon
@@ -32,6 +34,42 @@ Transform:
   - {fileID: 1842394632289482426}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7201319033609729546
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705344842417500212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: 0.01, y: 0.01, z: -0.51}
+--- !u!114 &7806043269621291019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705344842417500212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94367bd11dc32b444b4d287d8fc1d47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseWeapon: 6
 --- !u!1 &958545106842013055
 GameObject:
   m_ObjectHideFlags: 0

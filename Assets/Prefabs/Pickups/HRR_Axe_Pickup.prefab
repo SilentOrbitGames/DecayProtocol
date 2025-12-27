@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8261058651308184671}
+  - component: {fileID: 3903499437377437185}
+  - component: {fileID: 784923502263759007}
   m_Layer: 11
   m_Name: HRR_Axe_Pickup
   m_TagString: weapon
@@ -32,6 +34,40 @@ Transform:
   - {fileID: 2723312653775980580}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3903499437377437185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535416011120620379}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80, y: 20, z: 10}
+  m_Center: {x: 0, y: 1.44, z: 0}
+--- !u!114 &784923502263759007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535416011120620379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94367bd11dc32b444b4d287d8fc1d47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseWeapon: 3
 --- !u!1 &8854373185775026451
 GameObject:
   m_ObjectHideFlags: 0
