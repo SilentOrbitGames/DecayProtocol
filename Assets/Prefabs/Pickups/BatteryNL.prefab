@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5627463572973424996}
   - component: {fileID: 8767432120491557912}
   - component: {fileID: 8959931274247319934}
+  - component: {fileID: 5667387910106244661}
+  - component: {fileID: 3024909553934714849}
   m_Layer: 11
   m_Name: BatteryNL
   m_TagString: item
@@ -109,3 +111,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &5667387910106244661
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8372877545023094589}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.10863344
+  m_Height: 0.4118677
+  m_Direction: 1
+  m_Center: {x: 0.000000029802326, y: 0.012331026, z: -0.000000037252907}
+--- !u!114 &3024909553934714849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8372877545023094589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df41f0404b0760d4c9ac7ad3fcffc152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseItem: 9

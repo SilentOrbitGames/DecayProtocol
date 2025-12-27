@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5614348332365993785}
   - component: {fileID: 6501114576676574935}
+  - component: {fileID: 2894236923074429658}
+  - component: {fileID: 4862824603454098299}
   m_Layer: 11
   m_Name: CabinKey
   m_TagString: item
@@ -27,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 799.6072, y: 70.286, z: 66.02315}
-  m_LocalScale: {x: 0.22639, y: 0.22639008, z: 0.22639008}
+  m_LocalScale: {x: 0.41112, y: 0.411201, z: 0.4111201}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5983529525916528062}
@@ -62,6 +64,40 @@ LODGroup:
     renderers:
     - renderer: {fileID: 751863524980531182}
   m_Enabled: 1
+--- !u!65 &2894236923074429658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448112117412693003}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 1, z: 1}
+  m_Center: {x: 0.2, y: 0, z: 0.42}
+--- !u!114 &4862824603454098299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448112117412693003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df41f0404b0760d4c9ac7ad3fcffc152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseItem: 11
 --- !u!1 &5115479694223191576
 GameObject:
   m_ObjectHideFlags: 0

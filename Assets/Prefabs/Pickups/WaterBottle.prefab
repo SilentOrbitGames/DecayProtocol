@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7809610209923064557}
   - component: {fileID: 7069784166088479558}
   - component: {fileID: 914299277970782849}
+  - component: {fileID: 5009781050460672340}
   m_Layer: 11
   m_Name: WaterBottle
   m_TagString: item
@@ -133,3 +134,16 @@ CapsuleCollider:
   m_Height: 1.0526196
   m_Direction: 1
   m_Center: {x: -0.000000044703484, y: 0.0020724535, z: 0.000000052154064}
+--- !u!114 &5009781050460672340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207562198034815304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df41f0404b0760d4c9ac7ad3fcffc152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseItem: 6

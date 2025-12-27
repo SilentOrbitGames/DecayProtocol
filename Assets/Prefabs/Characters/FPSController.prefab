@@ -1160,6 +1160,7 @@ GameObject:
   - component: {fileID: 8851964881389688734}
   - component: {fileID: 3079641769923572398}
   - component: {fileID: 3566776119933545321}
+  - component: {fileID: 4851345107430310320}
   m_Layer: 6
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -1415,6 +1416,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2039
   pickupPanel: {fileID: 0}
+  pickupDisplayDistance: 5
   mainImage: {fileID: 0}
   weaponIcons:
   - {fileID: 21300000, guid: 678f29be4a1e0ab469d40045d4aaee0a, type: 3}
@@ -1425,6 +1427,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c4565bf54b8249541b61c2531fb75243, type: 3}
   - {fileID: 21300000, guid: 6c79c76850dc7904584693e54fd3d5a8, type: 3}
   - {fileID: 21300000, guid: c90fd889ffa43e544bdceefe215c88c9, type: 3}
+  itemIcons:
+  - {fileID: 21300000, guid: 4d162684ebb3b8e449a91e244cca8e79, type: 3}
+  - {fileID: 21300000, guid: 8b0a1c411f9cb704aadad099e7d10adc, type: 3}
+  - {fileID: 21300000, guid: 50e05fe385e9c4a4dbce20fbee53d0c6, type: 3}
+  - {fileID: 21300000, guid: 0b41dd31be8fa3d499ef52246b530ac0, type: 3}
+  - {fileID: 21300000, guid: 8ad877f59ad7406418636813c2c09d77, type: 3}
+  - {fileID: 21300000, guid: 14e223d8d2a00da428de1dae9f7936d8, type: 3}
+  - {fileID: 21300000, guid: 16a188de36598074d8cc146138719aff, type: 3}
+  - {fileID: 21300000, guid: dc42ea26503c1cf48ab6d771616cf1d1, type: 3}
+  - {fileID: 21300000, guid: 26832178e6e4d6a4db9c8821ff4b277d, type: 3}
+  - {fileID: 21300000, guid: 0f8253ff9ecb1984e9b1d9d545e48289, type: 3}
+  - {fileID: 21300000, guid: 25459343cb3f3454ca3dbfcbcaa2217a, type: 3}
+  - {fileID: 21300000, guid: c3f948dacbb18934491cae0ed89075a1, type: 3}
+  - {fileID: 21300000, guid: 797c2c9681b53004cbe55d6c25fcdb49, type: 3}
+  ammoIcons:
+  - {fileID: 21300000, guid: b288972135d95a24f8ec194b96188328, type: 3}
+  - {fileID: 21300000, guid: 43cbbf10336873840b37110504237b80, type: 3}
   mainTitle: {fileID: 0}
   weaponTitles:
   - KNIFE
@@ -1435,6 +1454,120 @@ MonoBehaviour:
   - SHOTGUN
   - SPRAY CAN
   - BOTTLE
+  itemTitles:
+  - FLASHLIGHT
+  - NIGHTVISION
+  - LIGHTER
+  - RAGS
+  - HEALTH PACK
+  - PILLS
+  - WATE BOTTLE
+  - ENERGY DRINK
+  - BATTERY (FL)
+  - BATTERY (NV)
+  - HOUSE KEY
+  - CABIN KEY
+  - JERRY CAN
+  ammoTitles:
+  - GUN AMMO
+  - SHOTGUN AMMO
+--- !u!82 &4851345107430310320
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5169661596650321133}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 6fadeef29e37a9849956668d930b8fbf, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5282032540894637637
 GameObject:
   m_ObjectHideFlags: 0

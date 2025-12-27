@@ -12,6 +12,7 @@ public class WeaponInventory : MonoBehaviour
     [SerializeField] Text title;
     [SerializeField] string[] descriptions;
     [SerializeField] Text description;
+    [SerializeField] Text amtsText;
 
     [Header("Audio")]
     [SerializeField] AudioClip click, select;
@@ -88,8 +89,9 @@ public class WeaponInventory : MonoBehaviour
         audioPlayer.clip = click;
         audioPlayer.Play();
         chosenWeaponNumber = weaponNumber;
+        amtsText.text = "Amts: " + SaveScript.weaponAmts[weaponNumber];
 
-        if(chosenWeaponNumber > 5)
+        if (chosenWeaponNumber > 5)
         {
             combineButton.SetActive(true);
             combinePanel.SetActive(false);

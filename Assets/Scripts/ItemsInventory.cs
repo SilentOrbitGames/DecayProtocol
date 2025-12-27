@@ -11,6 +11,7 @@ public class ItemsInventory : MonoBehaviour
     [SerializeField] Text title;
     [SerializeField] string[] descriptions;
     [SerializeField] Text description;
+    [SerializeField] Text amtsText;
     [Header("Audio")]
     [SerializeField] AudioClip click, select;
     [Header("Item Buttons")]
@@ -56,8 +57,9 @@ public class ItemsInventory : MonoBehaviour
         audioPlayer.clip = click;
         audioPlayer.Play();
         chosenItemNunmber = itemNumber;
+        amtsText.text = "Amts: " + SaveScript.itemAmts[itemNumber];
 
-        if(itemNumber < 4)
+        if (itemNumber < 4)
         {
             useButton.SetActive(false);
         }
