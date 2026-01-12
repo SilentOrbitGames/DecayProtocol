@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PickupsScript : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class PickupsScript : MonoBehaviour
     [SerializeField] public string[] weaponTitles;
     [SerializeField] public string[] itemTitles;
     [SerializeField] public string[] ammoTitles;
+    [SerializeField] public GameObject doorMessageObj;
+    [SerializeField] public Text doorMessage;
+    [SerializeField] public AudioClip[] pickupSounds;
 
     private int objID = 0;
     private AudioSource audioPlayer;
@@ -29,12 +33,14 @@ public class PickupsScript : MonoBehaviour
     {
         pickupPanel.SetActive(false);
         audioPlayer = GetComponent<AudioSource>();
+        doorMessageObj.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        pickupPanel.SetActive(false);
+        //pickupPanel.SetActive(false);
+        //doorMessageObj.SetActive(false);
 
         if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 30, ~excludeLayers))
         {
@@ -50,8 +56,9 @@ public class PickupsScript : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         SaveScript.weaponAmts[objID]++;
+                        audioPlayer.clip = pickupSounds[3];
                         audioPlayer.Play();
-                        SaveScript.change = true; 
+                        SaveScript.change = true;
                         Destroy(hit.transform.gameObject, 0.2f);
                     }
                 }
@@ -65,6 +72,7 @@ public class PickupsScript : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         SaveScript.itemAmts[objID]++;
+                        audioPlayer.clip = pickupSounds[3];
                         audioPlayer.Play();
                         SaveScript.change = true;
                         Destroy(hit.transform.gameObject, 0.2f);
@@ -80,12 +88,43 @@ public class PickupsScript : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         SaveScript.ammoAmts[objID]++;
+                        audioPlayer.clip = pickupSounds[3];
                         audioPlayer.Play();
                         SaveScript.change = true;
                         Destroy(hit.transform.gameObject, 0.2f);
                     }
                 }
+                else if (hit.transform.gameObject.CompareTag("door"))
+                {
+                    objID = (int)hit.transform.gameObject.GetComponent<DoorType>().chooseDoor;
+
+                    doorMessage.text = hit.transform.gameObject.GetComponent<DoorType>().message;
+                    doorMessageObj.SetActive(true);
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        audioPlayer.clip = pickupSounds[objID];
+                        audioPlayer.Play();
+
+                        if (hit.transform.gameObject.GetComponent<DoorType>().opened == false)
+                        {
+                            hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Open");
+                            hit.transform.gameObject.GetComponent<DoorType>().opened = true;
+                            hit.transform.gameObject.GetComponent<DoorType>().message = "[E] Close";
+                        }
+                        else if (hit.transform.gameObject.GetComponent<DoorType>().opened == true)
+                        {
+                            hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Close");
+                            hit.transform.gameObject.GetComponent<DoorType>().opened = false;
+                            hit.transform.gameObject.GetComponent<DoorType>().message = "[E] Open";
+                        }
+                    }
+                }
             }
+        }
+        else
+        {
+            pickupPanel.SetActive(false);
+            doorMessageObj.SetActive(false);
         }
     }
 }

@@ -12,15 +12,17 @@ public class DoorType : MonoBehaviour
     public typeOfDoor chooseDoor;
     public bool opened = false;
     public bool locked = false;
+    [HideInInspector]
+    public string message = "[E] Open";
+    private Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        anim = GetComponent<Animator>();
+        if(opened == true)
+        {
+            anim.SetTrigger("Open");
+            message = "[E] Close";
+        }
     }
 }
