@@ -42,7 +42,7 @@ public class PickupsScript : MonoBehaviour
         //pickupPanel.SetActive(false);
         //doorMessageObj.SetActive(false);
 
-        if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 30, ~excludeLayers))
+        if (Physics.SphereCast(transform.position, 0.3f, transform.forward, out hit, 30, ~excludeLayers))
         {
             if (Vector3.Distance(transform.position, hit.transform.position) < pickupDisplayDistance)
             {
