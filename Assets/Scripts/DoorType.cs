@@ -5,7 +5,7 @@ public class DoorType : MonoBehaviour
     public enum typeOfDoor
     {
         cabinet,
-        houde,
+        house,
         cabin
     }
 

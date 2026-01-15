@@ -97,10 +97,13 @@ public class PickupsScript : MonoBehaviour
                 else if (hit.transform.gameObject.CompareTag("door"))
                 {
                     objID = (int)hit.transform.gameObject.GetComponent<DoorType>().chooseDoor;
-
+                    if(hit.transform.gameObject.GetComponent<DoorType>().locked == true)
+                    {
+                        hit.transform.gameObject.GetComponent<DoorType>().message = "Locked. Need " + hit.transform.gameObject.GetComponent<DoorType>().chooseDoor + " key";
+                    }
                     doorMessage.text = hit.transform.gameObject.GetComponent<DoorType>().message;
                     doorMessageObj.SetActive(true);
-                    if (Input.GetKeyDown(KeyCode.E))
+                    if (Input.GetKeyDown(KeyCode.E) && hit.transform.gameObject.GetComponent<DoorType>().locked == false)
                     {
                         audioPlayer.clip = pickupSounds[objID];
                         audioPlayer.Play();
