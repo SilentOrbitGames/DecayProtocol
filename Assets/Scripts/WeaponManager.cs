@@ -49,9 +49,25 @@ public class WeaponManager : MonoBehaviour
         {
             if(SaveScript.inventoryOpen == false)
             {
-                anim.SetTrigger("Attack");
-                audioPlayer.clip = weaponSounds[SaveScript.weaponID];
-                audioPlayer.Play();
+                if(SaveScript.currentAmmo[SaveScript.weaponID] > 0)
+                {
+                    anim.SetTrigger("Attack");
+                    audioPlayer.clip = weaponSounds[SaveScript.weaponID];
+                    audioPlayer.Play();
+
+                    if(SaveScript.weaponID == 4 || SaveScript.weaponID == 5)
+                    {
+                        SaveScript.currentAmmo[SaveScript.weaponID]--;
+                    }
+                }
+                else
+                {
+                    if (SaveScript.weaponID == 4 || SaveScript.weaponID == 5)
+                    {
+                        audioPlayer.clip = weaponSounds[9];
+                        audioPlayer.Play();
+                    }
+                }
             } 
         }
     }

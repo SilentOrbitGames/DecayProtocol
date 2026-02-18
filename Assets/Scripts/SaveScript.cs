@@ -12,6 +12,9 @@ public class SaveScript : MonoBehaviour
     public static int[] weaponAmts = new int[8];
     public static int[] itemAmts = new int[13];
     public static int[] ammoAmts = new int[2];
+    public static int[] currentAmmo = new int[9];
+
+
     public static bool change = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,6 +29,13 @@ public class SaveScript : MonoBehaviour
 
         ammoAmts[0] = 12; // Pistol Default Ammo Amt
         ammoAmts[1] = 2; // Shotgun Default Ammo Amt
+
+        for (int i = 0; i < currentAmmo.Length; i++)
+        {
+            currentAmmo[i] = 2;
+        }
+
+        currentAmmo[4] = 12; // Pistol Current Ammo
     }
 
     // Update is called once per frame
