@@ -33,6 +33,7 @@ public class SaveScript : MonoBehaviour
         for (int i = 0; i < currentAmmo.Length; i++)
         {
             currentAmmo[i] = 2;
+            currentAmmo[6] = 0;
         }
 
         currentAmmo[4] = 12; // Pistol Current Ammo

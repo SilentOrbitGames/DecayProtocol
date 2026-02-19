@@ -6,15 +6,15 @@ public class WeaponManager : MonoBehaviour
 {
     public enum weaponSelect
     {
-      knife,
-      cleaver,
-      bat,
-      axe,
-      pistol,
-      shotgun,
-      sprayCan,
-      bottle,
-      bottleWithCloth
+        knife,
+        cleaver,
+        bat,
+        axe,
+        pistol,
+        shotgun,
+        sprayCan,
+        bottle,
+        bottleWithCloth
     }
 
     [Header("Weapon's Settings")]
@@ -26,6 +26,7 @@ public class WeaponManager : MonoBehaviour
     private Animator anim;
     private AudioSource audioPlayer;
     private int currentWeaponID;
+    private bool spraySoundOn = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,22 +41,22 @@ public class WeaponManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SaveScript.weaponID != currentWeaponID)
+        if (SaveScript.weaponID != currentWeaponID)
         {
             ChangeWeapons();
         }
 
         if (Input.GetMouseButtonDown(0))
         {
-            if(SaveScript.inventoryOpen == false)
+            if (SaveScript.inventoryOpen == false)
             {
-                if(SaveScript.currentAmmo[SaveScript.weaponID] > 0)
+                if (SaveScript.currentAmmo[SaveScript.weaponID] > 0)
                 {
                     anim.SetTrigger("Attack");
                     audioPlayer.clip = weaponSounds[SaveScript.weaponID];
                     audioPlayer.Play();
 
-                    if(SaveScript.weaponID == 4 || SaveScript.weaponID == 5)
+                    if (SaveScript.weaponID == 4 || SaveScript.weaponID == 5)
                     {
                         SaveScript.currentAmmo[SaveScript.weaponID]--;
                     }
@@ -68,7 +69,30 @@ public class WeaponManager : MonoBehaviour
                         audioPlayer.Play();
                     }
                 }
-            } 
+            }
+        }
+        if (Input.GetMouseButton(0))
+        {
+            if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
+            {
+                if(spraySoundOn == false)
+                {
+                    anim.SetTrigger("Attack");
+                    audioPlayer.clip = weaponSounds[SaveScript.weaponID];
+                    audioPlayer.Play();
+                    audioPlayer.loop = true;
+                    spraySoundOn = true;
+                }
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
+            {
+                anim.SetTrigger("Release");
+                spraySoundOn = false;
+                audioPlayer.loop = false;
+            }
         }
     }
 
@@ -83,7 +107,7 @@ public class WeaponManager : MonoBehaviour
         anim.SetInteger("WeaponID", SaveScript.weaponID);
         anim.SetBool("weaponChanged", true);
         currentWeaponID = SaveScript.weaponID;
-        Move(); 
+        Move();
         StartCoroutine(WeaponReset());
     }
 
