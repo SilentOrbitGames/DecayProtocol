@@ -75,13 +75,11 @@ public class WeaponManager : MonoBehaviour
         {
             if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
             {
-                if(spraySoundOn == false)
+                if (spraySoundOn == false)
                 {
-                    anim.SetTrigger("Attack");
-                    audioPlayer.clip = weaponSounds[SaveScript.weaponID];
-                    audioPlayer.Play();
-                    audioPlayer.loop = true;
                     spraySoundOn = true;
+                    anim.SetTrigger("Attack");
+                    StartCoroutine(StartSpraySound());
                 }
             }
         }
@@ -91,6 +89,7 @@ public class WeaponManager : MonoBehaviour
             {
                 anim.SetTrigger("Release");
                 spraySoundOn = false;
+                audioPlayer.Stop();
                 audioPlayer.loop = false;
             }
         }
@@ -146,5 +145,13 @@ public class WeaponManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         anim.SetBool("weaponChanged", false);
+    }
+
+    IEnumerator StartSpraySound()
+    {
+        yield return new WaitForSeconds(0.3f);
+        audioPlayer.clip = weaponSounds[SaveScript.weaponID];
+        audioPlayer.loop = true;
+        audioPlayer.Play();
     }
 }
