@@ -10,6 +10,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 73777
   packageName: Legacy Particle Pack
-  packageVersion: 4.0
-  assetPath: Assets/Environment Assets/Old Sea Port/EffectExamples/WeaponEffects/Textures/BloodSplat2.mat
-  uploadId: 684565
+  packageVersion: 6.0
+  assetPath: Assets/EffectExamples/WeaponEffects/Textures/BloodSplat2.mat
+  uploadId: 871050

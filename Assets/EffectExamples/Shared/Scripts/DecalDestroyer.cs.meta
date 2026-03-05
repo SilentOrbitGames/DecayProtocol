@@ -14,6 +14,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 73777
   packageName: Legacy Particle Pack
-  packageVersion: 4.0
-  assetPath: Assets/Environment Assets/Old Sea Port/EffectExamples/Shared/Scripts/DecalDestroyer.cs
-  uploadId: 684565
+  packageVersion: 6.0
+  assetPath: Assets/EffectExamples/Shared/Scripts/DecalDestroyer.cs
+  uploadId: 871050

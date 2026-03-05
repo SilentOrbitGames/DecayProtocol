@@ -70,6 +70,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 73777
   packageName: Legacy Particle Pack
-  packageVersion: 4.0
-  assetPath: Assets/Environment Assets/Old Sea Port/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif
-  uploadId: 684565
+  packageVersion: 6.0
+  assetPath: Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif
+  uploadId: 871050

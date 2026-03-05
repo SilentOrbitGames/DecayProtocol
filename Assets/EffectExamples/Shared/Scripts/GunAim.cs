@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.InputSystem;
 
 public class GunAim:MonoBehaviour
 {
@@ -18,8 +18,8 @@ public class GunAim:MonoBehaviour
 
 	void Update()
 	{
-		float mouseX = Input.mousePosition.x;
-		float mouseY = Input.mousePosition.y;
+		float mouseX = Mouse.current.position.ReadValue().x;
+		float mouseY = Mouse.current.position.ReadValue().y;
 
 		if (mouseX <= borderLeft || mouseX >= Screen.width - borderRight || mouseY <= borderBottom || mouseY >= Screen.height - borderTop) 
 		{

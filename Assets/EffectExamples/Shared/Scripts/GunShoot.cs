@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public class GunShoot : MonoBehaviour {
@@ -31,7 +31,7 @@ public class GunShoot : MonoBehaviour {
 
 	void Update () 
 	{
-		if (Input.GetButtonDown("Fire1") && Time.time > nextFire && !gunAim.GetIsOutOfBounds()) 
+		if (Mouse.current.leftButton.wasPressedThisFrame && Time.time > nextFire && !gunAim.GetIsOutOfBounds()) 
 		{
 			nextFire = Time.time + fireRate;
 			muzzleFlash.Play();

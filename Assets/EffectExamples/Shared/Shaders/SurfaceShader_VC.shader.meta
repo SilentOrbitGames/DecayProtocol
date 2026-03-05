@@ -11,6 +11,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 73777
   packageName: Legacy Particle Pack
-  packageVersion: 4.0
-  assetPath: Assets/Environment Assets/Old Sea Port/EffectExamples/Shared/Shaders/SurfaceShader_VC.shader
-  uploadId: 684565
+  packageVersion: 6.0
+  assetPath: Assets/EffectExamples/Shared/Shaders/SurfaceShader_VC.shader
+  uploadId: 871050
